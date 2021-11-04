@@ -2,9 +2,9 @@
   "name": "jelly-pages",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "serve": "vite preview",
     "build": "vite build",
-    "serve": "vite preview"
+    "dev": "vite"
   },
   "dependencies": {
     "@capacitor/android": "^3.2.5",
@@ -12,11 +12,11 @@
     "@capacitor/core": "^3.2.5",
     "@capacitor/ios": "^3.2.5",
     "vue": "^3.2.16",
-    "vue-router": "^3.5.3"
+    "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
-    "@vue/cli-plugin-router": "^4.5.15",
+    "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "^4.5.15",
     "vite": "^2.6.4"
   }
