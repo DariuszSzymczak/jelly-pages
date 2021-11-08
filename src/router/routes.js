@@ -1,14 +1,16 @@
-export default function () {
-  return [
-    {
-      path: '/',
-      name: 'Login',
-      component: () => import('./../pages/LoginPage.vue')
-    },
-    
-    {
-      path: '/:catchAll(.*)*',
-      component: () => import('./../pages/LoginPage.vue')
+import LoginAdmin from '../views/LoginAdmin.vue'
+
+export default [
+  {
+    path: '/',
+    name: 'LoginAdmin',
+    component: LoginAdmin
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: function () {
+      return import('../views/About.vue')
     }
-  ]
-}
+  }
+];
