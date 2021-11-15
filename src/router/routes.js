@@ -1,10 +1,15 @@
 import LoginAdmin from '../views/LoginAdmin.vue'
-
+import DashboardAdmin from '../views/DashboardAdmin.vue'
 export default [
   {
     path: '/',
     name: 'LoginAdmin',
     component: LoginAdmin
+  },
+  {
+    path: '/dashboard-admin',
+    name: 'DashboardAdmin',
+    component: DashboardAdmin
   },
   {
     path: '/about',

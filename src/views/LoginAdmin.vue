@@ -5,7 +5,7 @@
     <div class="LoginAdmin-login-box">
       <input placeholder="Login:" type="text" v-model="pies" />
       <input placeholder="Password:" type="text" />
-      <button @click="changePies">{{pies}}</button>
+      <button @click="changePies"><router-link to="/dashboard-admin">Zaloguj</router-link></button>
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@ import animate from "./../composables/animate.js";
 import {ref} from 'vue';
 
 let pies = ref(" piesek ");
-function changePies () { pies.value = "kot"; console.log('dasdasdasdasd') }
+function changePies () { pies.value = "kot"; }
 
 const lucekAnimation = [
   { x: "-30vw", y: "1vw", reverse: false },
